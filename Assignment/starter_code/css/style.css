@@ -95,10 +95,27 @@ header nav ul li a {
   color: #f9e42e;
 }
 
+header nav .line{
+  width: 3em;
+  height: .3em;
+  background: #f9e42e;
+  border-radius: 1em;
+  margin-top: .25em;
+}
+header nav .line:first-of-type{
+  margin-top:.7em;
+}
+header nav li:first-child{
+  float:right;
+  display: none;
+  cursor: pointer;
+}
+
 #hero {
   height: 700px;
   background: url(../images/header_bg.jpg) no-repeat top center #131e27;
   padding-top: 32px;
+  background-size: cover;
 }
 
 #hero .logo {
@@ -289,46 +306,46 @@ footer p {
 }
 
 
-@media only screen and (max-width: 768px;){
-  header nav{
-    width: 100%
-    margin: 0;
-  }
-
-  header nav ul{
-    display: none;
-    height: 0;
-    overflow: hidden;
-  }
-
-  header nav ul li{
-    display: block;
-    float: none;
-    margin:0;
-    font-size: 16px;
-  }
-
-  header nav ul li:first-child{
-    display: block;
-    position: absolute;
-    top: 6em;
-    right: .75em;
-    
-
-
-  }
-  header nav .line{
-    background: #f9e42e;
-    margin-top: .20em;
-    width: 3em;
-    height: .2em;
-  }
-  header nav .line:first-of-type{
-    margin-top: 5em;
-  }
-  /* header nav li:first-child{
-    display: none; */
-  }
+@media only screen and (max-width: 769px){
+ 
+ header nav {
+  width: 100%;
+  margin: 0;
 }
 
+header nav ul li{
+  float: none;
+  display: block;
+  margin: 0;
+  font-size: 18px;
+}
 
+header nav ul li:first-child{
+  display:block;
+  position: absolute;
+  top:.6em;
+  right:.75em;
+}
+
+header nav ul li a {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+header nav ul{
+  height:0;
+  transition:height 1s;
+  overflow: hidden;
+}
+#hero h2{
+ height: auto;
+ padding: 30px 0 50px;
+ font-size: 1em;
+  
+ 
+} 
+
+ }

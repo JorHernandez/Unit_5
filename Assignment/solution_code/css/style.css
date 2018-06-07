@@ -317,22 +317,27 @@ footer p {
   .logo {
     font-size: 36px;
   }
+
+  /* This shrinks the nav bar to fit 100% of the user's screen */
   header nav {
     width: 100%;
     margin: 0;
   }
+  /* This collapses the nav menu so that each <li> appears on top of one each other */
   header nav ul li{
     float: none;
     display: block;
     margin: 0;
     font-size: 18px;
   }
+  /* This is the hamburger menu. It is hidden on wider screens (display:none). We simply change the display to block so its visible on the screen */
   header nav ul li:first-child{
     display:block;
     position: absolute;
     top:.6em;
     right:.75em;
   }
+  /* This allows the nav menu to be displayed in the center of the page when the user clicks on the hamburger menu */
   header nav ul li a {
     display: block;
     width: 100%;
@@ -340,11 +345,13 @@ footer p {
     border-bottom: 1px solid #ccc;
     text-align: center;
   }
+  /* Sets the ul element to 0 height. Since there is content in the ul element, the overflow: hidden doesn't allow the content to be displayed in the too small ul container */
   header nav ul{
     height:0;
     transition:height 1s;
     overflow: hidden;
   }
+  /* This is connected to a click event in the app.js file. When the user clicks on the hamburger menu, the class "slideDown" is added and the nav menu slides and is visible*/
   header nav ul.slideDown {
     height: 10em;
   }
