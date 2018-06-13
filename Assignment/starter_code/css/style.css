@@ -167,6 +167,7 @@ h3 {
   background: url(../images/testimonial_bg.jpg) no-repeat top center #071324;
   padding: 70px 0 70px;
   color: #fff;
+  background-size: cover;
 }
 blockquote {
   font-size: 36px;
@@ -304,8 +305,19 @@ footer p {
   color: #fff;
   font-weight: 600;
 }
+/*
+To be honest I looked at the styling of the solution in the
+web browser console to understand
+how everything worked and interacted. I used the console to play
+around and tweak elements/divs.
 
+The biggest break through was the styling of the div container 
+versus the elements. 
 
+Also I set the back ground images to 'cover' because it's
+more asthetically pleasing to me.
+
+*/
 @media only screen and (max-width: 768px){
  
  header nav {
@@ -368,8 +380,14 @@ header nav ul{
   margin: 0 auto 0 0;
   width: 70%;
 }
+#benefits ul{
+  width:80%;
+}
 .container{
   width: 100%;
+}
+#testimonial blockquote{
+  width: 70%;
 }
  }
 
