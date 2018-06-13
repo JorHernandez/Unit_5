@@ -192,7 +192,7 @@ blockquote span {
   vertical-align: top;
 }
 #sidebar {
-  width: 240px;
+  width: 25%;
   display: inline-block;
   vertical-align: top;
 }
@@ -393,8 +393,47 @@ header nav ul{
 /****************
  * BLOG STYLING *
 ****************/ 
-
-
-
+#sidebar {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
 }
+  #sidebar h3 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #043049;
+  }
+  #sidebar ul {
+    margin-bottom: 40px;
+  }
+  #sidebar ul li a {
+    color: #043049;
+    font-size: 24px;
+  }
+  #sidebar p {
+    font-size: 22px;
+    line-height: 1.1;
+    margin-bottom: 40px;
+  }
+  #sidebar p a {
+    color: #043049;
+    font-weight: 600;
+  }
+  
+  #bottom-cta {
+    background: #f9e42e;
+    padding: 30px;
+    text-align: center;
+  }
+  .Ad-Unit{
+   display: none;
+  }
+  #main{
+    width:100%;
+  }
+}
+
+
+
 
