@@ -351,7 +351,7 @@ header nav ul{
  font-size: 1em;
  width: 100%;
  border-radius: 1em;
- margin:0 0 0 0;
+ margin:50 0 0 0;
 } 
 
 
@@ -359,6 +359,10 @@ header nav ul{
   font-size: 35px;
   padding: 25px 0 35px;
 
+}
+#benefits p{
+  margin: 0 auto 0 0;
+  width: 70%;
 }
  }
 
